@@ -8,32 +8,32 @@
 </header>
 
 <body>
-  <form action="text", method ='POST'>
+  <form method ='POST'>
     <label> Username
-        <input name="user" value="{username}" type="text" />
+        <input name="user" type="text" value= "{{username}}" />
     <label>
-    <p class='error'>{user_error}</p>    
+    <p class='error'>{{user_error}}</p>    
     
     <br>
 
     <label> Password
-        <input name="password" type="password" />
+        <input name="password" type="password" value= "{{password}}"/>
     </label>
-    <p class='error'>{password_error}</p>
+    <p class='error'>{{password_error}}</p>
     
     <br>
     
     <label> Verify Password
-        <input name="verify_password" type="text" />
+        <input name="verify_password" type="password" value= "{{verify_password}}" />
     </label>
-    <p class='error'>{verify_password_error}</p>
+    <p class='error'>{{verify_password_error}}</p>
     
     <br>
     <label> Email (optional)
-        <input name="email" value="{email}" type="text" />
+        <input name="email" type="text" value= "{{email}}"/>
     </label>
-    <p class='error'>{email_error}</p>
-    <input> type ="submit" type='Validate' </input>
+    <p class='error'>{{email_error}}</p>
+    <input type ="submit" name='Validate' />
 </body>
 <footer>
     C. Jenkins Assignment 3
